@@ -1,0 +1,13 @@
+{
+  "name": "crypto-investment-analysis",
+  "version": "1.0.0",
+  "description": "Crypto investment analysis for various time horizons. A 4-layer institutional-grade workflow: Macro, Fundamental, On-Chain, Technical.",
+  "license": "MIT",
+  "author": "thatssoheil",
+  "keywords": ["skills", "skills.sh", "agent-skills", "ai", "crypto", "bitcoin", "investment", "analysis", "hermes-agent"],
+  "files": ["skills/"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thatssoheil/crypto-investment-analysis.git"
+  }
+}

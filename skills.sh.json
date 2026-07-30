@@ -1,0 +1,10 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "groupings": [
+    {
+      "title": "Crypto",
+      "description": "Skills for cryptocurrency investment analysis, market data, and on-chain workflows.",
+      "skills": ["crypto-investment-analysis"]
+    }
+  ]
+}
