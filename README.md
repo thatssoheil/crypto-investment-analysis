@@ -4,6 +4,8 @@ A skills.sh-compatible [Agent Skill](https://skills.sh) for AI coding agents. A 
 
 Agent-agnostic: works as a Hermes skill or as a system prompt pasted into any AI chat.
 
+**No terminal? No problem.** A copy-paste prompt version for non-technical users is available at [thatssoheil/ai-prompts](https://github.com/thatssoheil/ai-prompts).
+
 ## Install
 
 The skill is agent-agnostic. Install for your agent:
