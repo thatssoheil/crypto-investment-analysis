@@ -1,8 +1,8 @@
-# 🧠 Skills — AI Agent Skills
+# Skills - AI Agent Skills Collection
 
-A collection of ready-made **"skills"** (expert instructions) that teach any AI agent to do professional work — **crypto investment analysis** and **AI fitness coaching**.
+A collection of ready-made **skills** (expert instructions) that teach any AI agent how to do professional work.
 
-> **What's a "skill"?** It's a set of expert instructions an AI agent loads so it knows exactly *how* to help you. Instead of starting from scratch, the AI follows a proven, professional workflow. No writing prompts — it's all built in.
+> **What's a skill?** A set of expert instructions an AI agent loads so it knows exactly *how* to help you. Instead of starting from scratch, the AI follows a proven, professional workflow. No writing prompts, it's all built in.
 
 - **Works with any AI agent:** Hermes, Claude Code, Codex, Cursor, Goose, OpenCode, Zed, and more.
 - **Agent-agnostic:** the same skill runs on every agent.
@@ -10,18 +10,15 @@ A collection of ready-made **"skills"** (expert instructions) that teach any AI 
 
 ---
 
-## 📦 What's inside
+## 📦 Skills in this collection
 
-| Skill | What it does |
-|---|---|
-| **crypto-investment-analysis** | A professional 4-layer cryptocurrency analysis — Macro, Fundamental, On-Chain, and Technical — for both trading and long-term holding. |
-| **fitness-program** | A complete fitness coaching workflow — intake, body analysis from photos, custom workout program, weekly check-ins. Multilingual. |
+Browse the [`skills/`](skills/) folder. Each skill is a professional workflow you can install in one command. New skills are added over time, so check back - this is an expanding collection.
 
 ---
 
-## 🚀 How to install
+## 🚀 How to use
 
-### Option 1: For regular users (easiest — no terminal)
+### Option 1: For regular users (easiest, no terminal)
 
 Skip installation entirely and use the **copy-paste prompt** versions here:
 👉 [github.com/thatssoheil/prompts](https://github.com/thatssoheil/prompts)
@@ -30,53 +27,43 @@ Just copy the text and paste it into ChatGPT, Claude, or Gemini.
 
 ### Option 2: For developers (install as an agent skill)
 
-Skills are agent-agnostic. Install the one you want for your agent:
+Skills are agent-agnostic. List what's available, then install what you want:
 
 ```bash
-# Hermes Agent
-npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent hermes-agent -g -y
-npx skills add thatssoheil/skills --skill fitness-program --agent hermes-agent -g -y
+# See what skills are in this repo
+npx skills add thatssoheil/skills --list
+
+# Install one skill for your agent (replace <skill-name> with a real one from the list above)
+npx skills add thatssoheil/skills --skill <skill-name> --agent hermes-agent -g -y
 ```
 
-Works the same for every agent — just change the `--agent` name:
+Works the same for every agent, just change the `--agent` name:
 
 ```bash
-# Claude Code
-npx skills add thatssoheil/skills --skill fitness-program --agent claude-code -g -y
-
-# OpenAI Codex
-npx skills add thatssoheil/skills --skill fitness-program --agent codex -g -y
-
-# Cursor
-npx skills add thatssoheil/skills --skill fitness-program --agent cursor -g -y
-
-# Goose
-npx skills add thatssoheil/skills --skill fitness-program --agent goose -g -y
-
-# OpenCode
-npx skills add thatssoheil/skills --skill fitness-program --agent opencode -g -y
-
-# Zed
-npx skills add thatssoheil/skills --skill fitness-program --agent zed -g -y
+# Examples
+npx skills add thatssoheil/skills --skill <skill-name> --agent claude-code -g -y
+npx skills add thatssoheil/skills --skill <skill-name> --agent codex -g -y
+npx skills add thatssoheil/skills --skill <skill-name> --agent cursor -g -y
+npx skills add thatssoheil/skills --skill <skill-name> --agent goose -g -y
+npx skills add thatssoheil/skills --skill <skill-name> --agent opencode -g -y
+npx skills add thatssoheil/skills --skill <skill-name> --agent zed -g -y
 ```
 
 ### Install ONE skill for ALL agents at once
 
 ```bash
-npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent hermes-agent claude-code codex cursor goose opencode zed -g -y
-npx skills add thatssoheil/skills --skill fitness-program --agent hermes-agent claude-code codex cursor goose opencode zed -g -y
+npx skills add thatssoheil/skills --skill <skill-name> --agent hermes-agent claude-code codex cursor goose opencode zed -g -y
 ```
 
 **Options explained:**
-- `-g` → installs globally (available to all your projects on this machine).
-- `-y` → skips confirmation prompts.
-- `--skill <name>` → which skill to install (or `*` for all).
+- `-g` -> installs globally (available to all your projects on this machine).
+- `-y` -> skips confirmation prompts.
+- `--skill <name>` -> which skill to install (or `*` for all).
 
 ### See a skill without installing
 
 ```bash
-# Print the skill instructions to the screen
-npx skills use thatssoheil/skills --skill fitness-program
+npx skills use thatssoheil/skills --skill <skill-name>
 ```
 
 ---
@@ -86,9 +73,7 @@ npx skills use thatssoheil/skills --skill fitness-program
 ```
 skills/
 ├── skills/
-│   ├── crypto-investment-analysis/
-│   │   └── SKILL.md          # the skill (instructions + setup)
-│   └── fitness-program/
+│   └── <skill-name>/
 │       └── SKILL.md          # the skill (instructions + setup)
 ├── skills.sh.json            # skills.sh grouping manifest
 ├── package.json
