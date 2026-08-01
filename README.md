@@ -1,3 +1,5 @@
+<p align="center"><b>🌍 Language / زبان:</b> <a href="README.md">English</a> | <a href="README.fa.md">فارسی</a></p>
+
 # Skills - AI Agent Skills Collection
 
 A collection of ready-made **skills** (expert instructions) that teach any AI agent how to do professional work.
@@ -81,13 +83,6 @@ skills/
 ```
 
 Follows the [skills.sh / Agent Skills](https://skills.sh) standard: one folder per skill under `skills/`, each containing a `SKILL.md`.
-
----
-
-## 🌍 Languages
-
-- [English](README.md)
-- [فارسی (Farsi)](README.fa.md)
 
 ---
 
