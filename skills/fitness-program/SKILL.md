@@ -44,11 +44,11 @@ Ask: "What language would you like me to use for your program and all communicat
 
 Ask the user to answer these 16 questions. Do NOT proceed to Step 2 until all are answered.
 
-1. Primary goal: cut (lose fat), bulk (build muscle), recomp (lose fat + build muscle simultaneously), strength, sport-specific, or general health/maintenance
-2. Timeline: how many weeks until the target date? (default if unspecified: 12)
-3. Training experience: complete beginner, some experience, intermediate, advanced
-4. Available days per week: 3, 4, 5, or 6
-5. Session duration: 30, 45, 60, or 90 min
+1. Primary goal: cut (lose fat), build (gain muscle), recomp (lose fat + build muscle), or general health / feeling better day to day
+2. Timeline: how many weeks until the target date? (default if unspecified: 8-12)
+3. Training experience: brand new to exercise, or some experience
+4. Available days per week: 2, 3, or 4
+5. Session duration: 20, 30, 45, or 60 min
 6. Available equipment: be specific — full gym, home dumbbells, resistance bands, bodyweight only, kettlebells, pull-up bar, park, swimming pool, etc.
 7. Current activity baseline: how active are you right now? (sedentary, light, moderately active, very active)
 8. Age
@@ -92,10 +92,9 @@ Generate a full program. Select the split based on the user's goal, recovery cap
 
 | Days/Week | Suggested Splits |
 |-----------|-----------------|
-| 3 | Full Body or Upper/Lower rotation |
-| 4 | Upper/Lower |
-| 5 | Push/Pull/Legs + Upper or Full Body |
-| 6 | Push/Pull/Legs x2 |
+| 2 | Full Body x2 |
+| 3 | Full Body x3 or Upper/Lower rotation |
+| 4 | Upper/Lower x2 |
 
 For beginners (first 4 weeks): keep it simple — 2-3 compounds per session, minimal isolation, focus on technique and consistency.
 
@@ -138,7 +137,7 @@ Programming rules:
 
 Phasing:
 - 4-8 weeks: 2 phases (adaptation → progressive overload)
-- 9-12 weeks: 3 phases (adaptation → progression → peak)
+- 9-12 weeks: 3 phases (adaptation → progressive overload → maintenance)
 - >12 weeks: deload every 4th-5th week (cut volume 30-50%, maintain intensity)
 - Week 1 is always the lightest (RPE 6-7), ramp up over subsequent weeks
 
@@ -147,8 +146,7 @@ RPE reference (include in the program):
 RPE 6: 4 reps in reserve (easy)
 RPE 7: 3 reps in reserve (moderate)
 RPE 8: 2 reps in reserve (standard working intensity)
-RPE 9: 1 rep in reserve (rare on compounds)
-RPE 10: 0 reps in reserve (max effort — controlled use only)
+RPE 9: 1 rep in reserve (hard - use sparingly)
 ```
 
 **Session-by-session progression logic:**
@@ -156,7 +154,7 @@ RPE 10: 0 reps in reserve (max effort — controlled use only)
 - If the last rep of the final set reaches RPE 9 with at least 1 rep still in rep range → maintain load, try for +1 rep
 - If any set fails to reach the bottom of the rep range → reduce load 5% next session
 - If technique visibly degrades before target RPE → keep load, prioritize execution
-- If all sets are at RPE ≥ 9.5 for 2 consecutive sessions → deload that lift next session (drop load 10%, same reps)
+- If all sets are at RPE 9 for 2 consecutive sessions → deload that lift next session (drop load 10%, same reps)
 - If progressing on all lifts for 3+ weeks → consider adding 1 set per exercise
 
 **Weekly progressive overload rules:**
@@ -209,7 +207,7 @@ WEEK [X] CHECK-IN
 1. Weight today: ___ (same conditions each time — morning, fasted)
 2. Sessions completed: ___ / [total planned]
 3. Any pain or injuries? Yes/No — if yes, describe
-4. Average session RPE (6-10): ___
+4. Average session RPE (6-9): ___
 5. Sleep quality this week: 1-5
 6. Energy/motivation: 1-5
 7. What felt good?
@@ -221,7 +219,7 @@ WEEK [X] CHECK-IN
 Auto-adjustments based on check-in:
 - Adherence < 70%: cut volume 10-20%, simplify exercise selection
 - All RPE < 7: increase weight next week
-- Any compound RPE = 10: deload that lift by 5-10% next week
+- Any set consistently at RPE 9: deload that lift by 5-10% next week
 - Pain reported: substitute the exercise, recommend professional evaluation if persistent
 - Energy consistently low (2 weeks+): reduce volume, investigate sleep/nutrition
 - Plateau > 2 weeks: change exercise variation or rep scheme
@@ -255,7 +253,7 @@ At program completion:
 Do not give fixed numbers. Estimate their maintenance calories first (use Mifflin-St Jeor or similar), then recommend:
 
 - Cutting: maintenance minus 300-500 cal
-- Bulking: maintenance plus 200-300 cal
+- Building (gain muscle): maintenance plus 200-300 cal
 - Protein: 1.6-2.2 g/kg bodyweight
 - Fats: minimum 0.6-0.8 g/kg (hormone health)
 - Carbs: fill remaining calories based on training demands
