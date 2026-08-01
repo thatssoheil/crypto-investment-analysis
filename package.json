@@ -1,13 +1,13 @@
 {
-  "name": "crypto-investment-analysis",
+  "name": "skills",
   "version": "1.0.0",
-  "description": "Crypto investment analysis for various time horizons. A 4-layer institutional-grade workflow: Macro, Fundamental, On-Chain, Technical.",
+  "description": "A skills.sh-compatible collection of Agent Skills — crypto investment analysis and AI fitness coaching.",
   "license": "MIT",
   "author": "thatssoheil",
-  "keywords": ["skills", "skills.sh", "agent-skills", "ai", "crypto", "bitcoin", "investment", "analysis", "hermes-agent"],
+  "keywords": ["skills", "skills.sh", "agent-skills", "ai", "crypto", "bitcoin", "investment", "analysis", "fitness", "workout", "hermes-agent"],
   "files": ["skills/"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/thatssoheil/crypto-investment-analysis.git"
+    "url": "https://github.com/thatssoheil/skills.git"
   }
 }

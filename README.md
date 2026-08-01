@@ -1,42 +1,77 @@
-# crypto-investment-analysis
+# skills
 
-A skills.sh-compatible [Agent Skill](https://skills.sh) for AI coding agents. A professional, institutional-grade 4-layer cryptocurrency analysis workflow — Macro & Market Sentiment, Fundamental Analysis, On-Chain Data, and Technical Analysis — for both short-term trading and long-term holding.
+A skills.sh-compatible collection of [Agent Skills](https://skills.sh) by [thatssoheil](https://github.com/thatssoheil). Each skill is a self-contained `SKILL.md` that works with ANY AI agent — Hermes, Claude Code, Codex, Cursor, Goose, OpenCode, Zed, and more.
 
-Agent-agnostic: works as a Hermes skill or as a system prompt pasted into any AI chat.
+All skills are agent-agnostic: they work as agent skills, or can be copy-pasted as system prompts into any AI chat.
 
-**No terminal? No problem.** A copy-paste prompt version for non-technical users is available at [thatssoheil/prompts](https://github.com/thatssoheil/prompts).
+**No terminal? No problem.** Copy-paste prompt versions for non-technical users are available at [thatssoheil/prompts](https://github.com/thatssoheil/prompts).
+
+## Skills in this collection
+
+| Skill | Description |
+|---|---|
+| [crypto-investment-analysis](skills/crypto-investment-analysis/SKILL.md) | A professional 4-layer cryptocurrency analysis workflow — Macro, Fundamental, On-Chain, and Technical — for trading and long-term holding. |
+| [fitness-program](skills/fitness-program/SKILL.md) | A structured, conversational fitness coaching workflow — intake, vision-based body analysis, program generation, weekly check-ins. Multilingual. |
 
 ## Install
 
-The skill is agent-agnostic. Install for your agent:
+Skills are agent-agnostic. Install the one you want for your agent:
+
+### crypto-investment-analysis
 
 ```bash
 # Hermes Agent
-npx skills add thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent hermes-agent -g -y
+npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent hermes-agent -g -y
 
 # Claude Code
-npx skills add thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent claude-code -g -y
+npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent claude-code -g -y
 
 # OpenAI Codex
-npx skills add thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent codex -g -y
+npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent codex -g -y
 
 # Cursor
-npx skills add thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent cursor -g -y
+npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent cursor -g -y
 
 # Goose
-npx skills add thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent goose -g -y
+npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent goose -g -y
 
 # OpenCode
-npx skills add thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent opencode -g -y
+npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent opencode -g -y
 
 # Zed
-npx skills add thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent zed -g -y
+npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent zed -g -y
 ```
 
-### Install for ALL agents at once
+### fitness-program
 
 ```bash
-npx skills add thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent hermes-agent claude-code codex cursor goose opencode zed -g -y
+# Hermes Agent
+npx skills add thatssoheil/skills --skill fitness-program --agent hermes-agent -g -y
+
+# Claude Code
+npx skills add thatssoheil/skills --skill fitness-program --agent claude-code -g -y
+
+# OpenAI Codex
+npx skills add thatssoheil/skills --skill fitness-program --agent codex -g -y
+
+# Cursor
+npx skills add thatssoheil/skills --skill fitness-program --agent cursor -g -y
+
+# Goose
+npx skills add thatssoheil/skills --skill fitness-program --agent goose -g -y
+
+# OpenCode
+npx skills add thatssoheil/skills --skill fitness-program --agent opencode -g -y
+
+# Zed
+npx skills add thatssoheil/skills --skill fitness-program --agent zed -g -y
+```
+
+### Install a skill for ALL agents at once
+
+```bash
+npx skills add thatssoheil/skills --skill crypto-investment-analysis --agent hermes-agent claude-code codex cursor goose opencode zed -g -y
+npx skills add thatssoheil/skills --skill fitness-program --agent hermes-agent claude-code codex cursor goose opencode zed -g -y
 ```
 
 Notes:
@@ -48,31 +83,23 @@ Notes:
 
 ```bash
 # Print the skill prompt to stdout
-npx skills use thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis
+npx skills use thatssoheil/skills --skill crypto-investment-analysis
+npx skills use thatssoheil/skills --skill fitness-program
 
 # Start a supported agent interactively with the generated prompt
-npx skills use thatssoheil/crypto-investment-analysis --skill crypto-investment-analysis --agent claude-code
+npx skills use thatssoheil/skills --skill fitness-program --agent claude-code
 ```
-
-## What it does
-
-A 4-layer analysis framework for any cryptocurrency:
-
-1. **Macro & Market Sentiment (The Wind)** — BTC dominance, Fear & Greed index, stablecoin liquidity.
-2. **Fundamental Analysis (The Engine)** — tokenomics, utility, developer activity, social dominance.
-3. **On-Chain Data (The Truth)** — network health, transaction activity, exchange flows, MVRV ratio.
-4. **Technical Analysis (The Entry)** — price structure, relative strength vs BTC, key levels, volume profile.
-
-Plus three ahead scenarios (bullish / neutral / bearish) and a structured output format with executive summary, verdict, and a DCA/exit plan.
 
 ## Repository structure
 
 ```
-crypto-investment-analysis/
+skills/
 ├── skills/
-│   └── crypto-investment-analysis/
+│   ├── crypto-investment-analysis/
+│   │   └── SKILL.md          # the skill (frontmatter + instructions)
+│   └── fitness-program/
 │       └── SKILL.md          # the skill (frontmatter + instructions)
-├── skills.sh.json            # optional skills.sh grouping manifest
+├── skills.sh.json            # skills.sh grouping manifest
 ├── package.json
 └── README.md
 ```

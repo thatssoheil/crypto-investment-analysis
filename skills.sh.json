@@ -5,6 +5,11 @@
       "title": "Crypto",
       "description": "Skills for cryptocurrency investment analysis, market data, and on-chain workflows.",
       "skills": ["crypto-investment-analysis"]
+    },
+    {
+      "title": "Lifestyle",
+      "description": "Skills for fitness, health, and lifestyle workflows.",
+      "skills": ["fitness-program"]
     }
   ]
 }
